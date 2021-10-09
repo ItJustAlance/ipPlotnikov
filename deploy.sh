@@ -12,7 +12,7 @@ set -e
 # 部署到自定义域域名
 # echo 'www.example.com' > CNAME
 
-git init
+# git init
 git add -A
 git commit -m 'deploy'
 
