@@ -1,38 +1,37 @@
 <template>
   <div id="app">
+
     <header class="header">
-      <h1>Документы</h1>
-      <div class="header__right">
+      <div class="container">
+        <h1>Документы</h1>
+
         <div class="header__icons">
-          <a href="" class="favorite"></a>
-          <a href="" class="btn-add">Новый тип</a>
-          <a href="" class="btn-add">Новый документ</a>
+          <a href="" class="favorite"><svg-icon name="favorite"/></a>
+          <a href="" class="btn-add"><svg-icon name="plus"/>Новый тип</a>
+          <a href="" class="btn-add"><svg-icon name="plus"/>Новый документ</a>
         </div>
       </div>
     </header>
-
-    <nested-example />
+    <div class="main">
+      <div class="container">
+        <nested-example />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import nestedExample from "./components/nested-example";
-
+import SvgIcon from "./components/SvgIcon";
 export default {
   name: 'App',
   components: {
+    SvgIcon,
     nestedExample
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import "~@/assets/style/app.scss";
 </style>

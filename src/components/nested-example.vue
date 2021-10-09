@@ -24,30 +24,72 @@ export default {
     return {
       list: [
         {
-          name: "task 1",
+          name: "Обязательные для всех",
+          req: false,
+          status: ['st1', 'st2'],
+          text: 'Документы, обязательные для всех сотрудников без исключения',
           tasks: [
             {
-              name: "task 2",
+              name: "Паспорт",
+              req: true,
+              status: ['st1'],
+              text: 'Для всех',
+              tasks: []
+            },
+            {
+              name: "ИНН",
+              req: true,
+              status: [],
+              text: 'Для всех',
               tasks: []
             }
           ]
         },
         {
-          name: "task 3",
-          tasks: [
-            {
-              name: "task 4",
-              tasks: []
-            }
-          ]
-        },
-        {
-          name: "task 5",
+          name: "Обязательные для трудоустройства",
+          req: false,
+          status: [],
+          text: 'Документы, обязательные для всех сотрудников без исключения',
           tasks: []
-        }
+        },
+        {
+          name: "Специальные",
+          req: false,
+          type: 'title',
+          status: [],
+          text: '',
+          tasks: []
+        },
+        {
+          name: "Тестовое задание кандидата",
+          req: false,
+          type: '',
+          text: 'Россия, Белоруссия, Украина, администратор филиала, повар-сушист, повар-пиццмейкер, повар горячего цеха',
+          status: [],
+          tasks: []
+        },
+        {
+          name: "Трудовой договор",
+          req: false,
+          type: '',
+          status: ['st1', 'st2', 'st3'],
+          text: '',
+          tasks: []
+        },
+        {
+          name: "Мед. книжка",
+          req: false,
+          type: '',
+          status: [],
+          text: '',
+          tasks: []
+        },
       ]
     };
   }
 };
 </script>
-<style scoped></style>
+<style>
+
+
+</style>
