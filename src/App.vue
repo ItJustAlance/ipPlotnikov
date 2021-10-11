@@ -22,11 +22,10 @@
 
 <script>
 import nestedExample from "./components/nested-example";
-import SvgIcon from "./components/SvgIcon";
+
 export default {
   name: 'App',
   components: {
-    SvgIcon,
     nestedExample
   }
 }

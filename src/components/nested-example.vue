@@ -3,7 +3,8 @@
       <div class="document-search">
         <input type="text" placeholder="Поиск">
       </div>
-      <nested-draggable :tasks="list" />
+
+      <nested-draggable  :tasks="list" />
 
     <rawDisplayer class="col-3" :value="list" title="List" />
   </div>
@@ -28,12 +29,14 @@ export default {
           req: false,
           status: ['st1', 'st2'],
           text: 'Документы, обязательные для всех сотрудников без исключения',
+          show: true,
           tasks: [
             {
               name: "Паспорт",
               req: true,
               status: ['st1'],
               text: 'Для всех',
+              show: true,
               tasks: []
             },
             {
@@ -41,6 +44,7 @@ export default {
               req: true,
               status: [],
               text: 'Для всех',
+              show: true,
               tasks: []
             }
           ]
@@ -50,6 +54,7 @@ export default {
           req: false,
           status: [],
           text: 'Документы, обязательные для всех сотрудников без исключения',
+          show: true,
           tasks: []
         },
         {
@@ -58,6 +63,7 @@ export default {
           type: 'title',
           status: [],
           text: '',
+          show: true,
           tasks: []
         },
         {
@@ -66,6 +72,7 @@ export default {
           type: '',
           text: 'Россия, Белоруссия, Украина, администратор филиала, повар-сушист, повар-пиццмейкер, повар горячего цеха',
           status: [],
+          show: true,
           tasks: []
         },
         {
@@ -74,6 +81,7 @@ export default {
           type: '',
           status: ['st1', 'st2', 'st3'],
           text: '',
+          show: true,
           tasks: []
         },
         {
@@ -82,6 +90,7 @@ export default {
           type: '',
           status: [],
           text: '',
+          show: true,
           tasks: []
         },
       ]

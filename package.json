@@ -6,8 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy:github": "sh deploy_github.sh",
-    "deploy:gitee": "sh deploy_gitee.sh"
+    "deploy:github": "sh deploy_github.sh"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -44,15 +43,7 @@
     },
     "rules": {}
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged"
-  },
-  "lint-staged": {
-    "*.{js,jsx,vue,ts,tsx}": [
-      "vue-cli-service lint",
-      "git add"
-    ]
-  },
+
   "browserslist": [
     "> 1%",
     "last 2 versions",
