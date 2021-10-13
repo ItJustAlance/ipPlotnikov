@@ -50,7 +50,7 @@ export default {
     draggable
   },
   computed:{
-      dragOptions() {
+    dragOptions() {
         return {
           group: "g1",
           disabled: false,
@@ -60,9 +60,10 @@ export default {
           animation: 90,
           multiDrag: true,
           selectedClass: "multi-drag",
-          emptyInsertThreshold: 48 // отступ чтобы вставить
+          emptyInsertThreshold: 20 // отступ чтобы вставить
         };
-    }
+    },
+
   },
   methods:{
     removeAt(idx) {
@@ -99,7 +100,9 @@ export default {
     left: 0;
     right: 0;
     height: 5px;
-
+  }
+  .svg-icon--move {
+    fill: #0066FF !important
   }
 }
 .dragArea {
@@ -113,6 +116,7 @@ position: relative;
   background: #fff;
 
 }
+
 .arr-toggle {
   border: 1px solid #D3D8DF;
   width: 22px;
